@@ -1,0 +1,32 @@
+
+
+#result_box{
+   display: flex;
+   width: 200px;
+   background-color: aqua;
+   margin: 5px;
+
+}
+#result{
+   font-size: 50px;
+   
+}
+
+
+button{
+    width: 50px;
+    height: 50px;
+}
+
+#button_AC{
+    width: 103px;
+}
+
+#button_{
+    width: 103px;
+
+}
+
+.add_hidden {  /* クラスの追加時はこのCSSが当たるようにします */
+    display: none;
+    }

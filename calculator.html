@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.2.1.js" crossorigin="anonymous"></script>  
+    <link rel="stylesheet" href="calculator.css">
+    <title></title>
+  </head>
+<body>
+    <div id="result_box">
+      <div id="result">0</div>
+    </div>
+    <div>
+      <button id="button_7" onclick="clickButton('7')">7</button>
+      <button id="button_8" onclick="clickButton('8')">8</button>
+      <button id="button_9" onclick="clickButton('9')">9</button>
+      <button id="calculate_+" onclick="clickButton('+')">+</button><br>
+      <button id="button_4" onclick="clickButton('4')">4</button>
+      <button id="button_5" onclick="clickButton('5')">5</button>
+      <button id="button_6" onclick="clickButton('6')">6</button>
+      <button id="calculate_-" onclick="clickButton('-')">-</button><br>
+      <button id="button_1" onclick="clickButton('1')">1</button>
+      <button id="button_2" onclick="clickButton('2')">2</button>
+      <button id="button_3" onclick="clickButton('3')">3</button>
+      <button id="calculate_*" onclick="clickButton('*')">*</button><br>
+      <button id="button_0" onclick="clickButton('0')">0</button>
+      <button id="button_00" onclick="clickButton('00')">00</button>
+      <button id="button_." onclick="clickButton('.')">.</button>
+      <button id="calculate_/" onclick="clickButton('/')">/</button><br>
+      <button id="button_AC" onclick="clickButton('AC')">AC</button>
+      <button id="button_" onclick="clickButton('=')">=</button>
+    </div>
+    <script src="calculator.js"></script>
+  </body>
+</html>
