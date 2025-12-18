@@ -1,12 +1,17 @@
 let timer;
 let miriseconds = 0;
 
+const count_seconds = 10
+const count_minutes = count_seconds*60
+const count_hours = count_minutes*60
+
+
 function countTime() {
     miriseconds++;
-    const hours = Math.floor(miriseconds / 36000);
-    const minutes = Math.floor((miriseconds % 36000) / 600);
-    const secs = Math.floor(((miriseconds % 36000) % 600) / 10);
-    const mss = Math.floor(((miriseconds % 36000) % 600) % 10);
+    const hours = Math.floor(miriseconds / count_hours);
+    const minutes = Math.floor((miriseconds % count_hours) / count_minutes);
+    const secs = Math.floor(((miriseconds % count_hours) % count_minutes) / count_seconds);
+    const mss = Math.floor(((miriseconds % count_hours) % count_minutes) % count_seconds);
     document.getElementById('stopwatch').textContent =
         String(hours).padStart(2, '') + ':' +//stringは文字だよ！padstartは字数と余白
         String(minutes).padStart(2, '') + ':' +
